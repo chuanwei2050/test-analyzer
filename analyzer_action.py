@@ -46,7 +46,7 @@ def dataframe_agent(openai_api_key, df, query):
         model="gpt-4o-mini",
         temperature=0,
         openai_api_key=openai_api_key,
-        openai_api_base=os.getenv("OPENAI_API_BASE")
+        openai_api_base="https://api.chatanywhere.tech/v1"
     )
 
     # 创建 agent，添加必要的安全参数
@@ -57,7 +57,7 @@ def dataframe_agent(openai_api_key, df, query):
         agent_executor_kwargs={"handle_parsing_errors": True},
         agent_type=AgentType.OPENAI_FUNCTIONS,
         allow_dangerous_code=True,  # 明确允许代码执行
-        max_execution_time=30,  # 设置最大执行时间为30秒
+        max_execution_time=180,  # 设置最大执行时间为30秒
         max_iterations=100,  # 设置最大迭代次数
     )
 
