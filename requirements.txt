@@ -23,7 +23,7 @@ beautifulsoup4==4.12.2
 bleach==6.1.0
 blinker==1.7.0
 Brotli==1.1.0
-build @ file:///private/tmp/python-build-20231022-5434-1rseqw8/build-1.0.3
+build==1.0.3
 cachetools==5.3.2
 certifi==2023.11.17
 cffi==1.16.0
@@ -229,7 +229,7 @@ PyMuPDFb==1.24.6
 pyparsing==3.1.1
 pypdf==4.0.2
 PyPika==0.48.9
-pyproject_hooks @ file:///private/tmp/python-pyproject-hooks-20231007-5328-17riy9v/pyproject_hooks-1.0.0
+pyproject_hooks==1.0.0
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 python-json-logger==2.0.7
