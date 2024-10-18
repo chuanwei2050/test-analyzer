@@ -1,8 +1,3 @@
-import os
-from dotenv import load_dotenv, find_dotenv
-
-_ = load_dotenv(find_dotenv())
-
 import json
 from langchain_openai import ChatOpenAI
 from langchain.agents.agent_types import AgentType
